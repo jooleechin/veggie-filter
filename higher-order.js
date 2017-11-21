@@ -43,6 +43,15 @@ foods = [
   }
 ]
 
-function veggieFoodFilter() {
-
+function veggieFoodFilter(foods) {
+  var meats = ['chicken', 'beef']
+  return foods.filter(function(food) {
+    var meatFound = false
+    food.contents.forEach(function(ingredient) {
+      if (meats.includes(ingredient)) {
+        meatFound = true
+      }
+    })
+    return !meatFound
+  })
 }
