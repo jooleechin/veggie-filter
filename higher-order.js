@@ -1,43 +1,43 @@
 foods = [
   {
     name: 'burger', 
-    ingredients: [
+    contents: [
       'beef', 'bun', 'lettuce', 'ketchup'
     ]
   },
   {
     name: 'fries', 
-    ingredients: [
+    contents: [
       'potatoes', 'oil'
     ]
   },
   {
     name: 'chicken sandwich', 
-    ingredients: [
+    contents: [
       'chicken', 'lettuce', 'mayo', 'bun'
     ]
   },
   {
     name: 'tea', 
-    ingredients: [
+    contents: [
       'tea'
     ]
   },
   {
     name: 'veggie burger', 
-    ingredients: [
+    contents: [
       'veggies', 'bun'
     ]
   },
   {
     name: 'veggie burger', 
-    ingredients: [
+    contents: [
       'veggies', 'bun'
     ]
   },
   {
     name: 'pancakes', 
-    ingredients: [
+    contents: [
       'wheat', 'syrup'
     ]
   }
@@ -55,3 +55,5 @@ function veggieFoodFilter(foods) {
     return !meatFound
   })
 }
+
+console.log(veggieFoodFilter(foods))
